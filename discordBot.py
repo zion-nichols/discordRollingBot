@@ -35,7 +35,7 @@ def create_embed(member, pool, difficulty, result, sux, willpower):
         f'```{outcome}```'
     )
     if willpower:
-        embed.set_footer='**Willpower used'
+        embed.set_footer(text='**Willpower used')
     embed.set_author(name=member.display_name, icon_url=member.avatar)
 
 
@@ -92,7 +92,7 @@ def create_attack_embed(member, pool, result, difficulty, willpower):
         f'```{outcome}```'
         )
     if willpower:
-        embed.set_footer='**Willpower used'
+        embed.set_footer(text='**Willpower used')
     embed.set_author(name=member.display_name, icon_url=member.avatar)
     return embed
     
